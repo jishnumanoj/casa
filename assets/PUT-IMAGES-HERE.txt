@@ -1,0 +1,8 @@
+﻿The supplied D'Casa website photography is included in this folder:
+- hero.jpg — hero background
+- project-1.jpg through project-5.jpg — featured project cards
+- about.jpg — about section image
+- gallery-01.jpg through gallery-34.jpg — complete supplied image gallery (open “Browse all 34 supplied images” on the Projects section)
+- dcasa-logo.png — supplied company logo
+
+Add favicon.png here to complete the browser tab icon. All images are local so they deploy with the static site.

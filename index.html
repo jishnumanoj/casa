@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en" data-theme="white">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="D'Casa Homes creates thoughtful architecture, interiors and homes across Kerala, shaped around the way you live.">
+  <meta name="theme-color" content="#1d1b19">
+  <title>D'Casa Homes | Architecture &amp; Interior Design</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem('dcasa-theme');
+        var accent = localStorage.getItem('dcasa-accent');
+        if (['white','charcoal','sand','forest','midnight','terracotta','custom'].includes(theme)) document.documentElement.dataset.theme = theme;
+        if (theme === 'custom' && /^#[0-9a-f]{6}$/i.test(accent || '')) document.documentElement.style.setProperty('--accent', accent);
+      } catch (_) { /* Storage may be unavailable; the default theme remains usable. */ }
+    }());
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="D'Casa Homes, home"><img src="assets/dcasa-logo.png" alt="D'Casa Homes"></a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#top">Home</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#approach">Our Approach</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="theme-wrap">
+        <button class="icon-button theme-toggle" type="button" aria-label="Choose colour theme" aria-expanded="false" aria-controls="theme-menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1.2a2.2 2.2 0 0 0 1.7-3.6 1.4 1.4 0 0 1 1.1-2.3H18a3 3 0 0 0 3-3c0-5-4-9.1-9-9.1Z"/><circle cx="7.5" cy="11" r=".8"/><circle cx="10" cy="7.5" r=".8"/><circle cx="14.5" cy="7.5" r=".8"/></svg>
+        </button>
+        <div class="theme-menu" id="theme-menu" hidden>
+          <p class="menu-label">Choose a palette</p>
+          <button class="theme-option" type="button" data-theme-choice="white"><i class="swatch swatch-white"></i><span>White &amp; Sand</span><span class="theme-check" aria-hidden="true">✓</span></button>
+          <button class="theme-option" type="button" data-theme-choice="charcoal"><i class="swatch swatch-charcoal"></i><span>Charcoal &amp; Brass</span><span class="theme-check" aria-hidden="true">✓</span></button>
+          <button class="theme-option" type="button" data-theme-choice="sand"><i class="swatch swatch-sand"></i><span>Ivory &amp; Sand</span><span class="theme-check" aria-hidden="true">✓</span></button>
+          <button class="theme-option" type="button" data-theme-choice="forest"><i class="swatch swatch-forest"></i><span>Forest &amp; Brass</span><span class="theme-check" aria-hidden="true">✓</span></button>
+          <button class="theme-option" type="button" data-theme-choice="midnight"><i class="swatch swatch-midnight"></i><span>Midnight &amp; Copper</span><span class="theme-check" aria-hidden="true">✓</span></button>
+          <button class="theme-option" type="button" data-theme-choice="terracotta"><i class="swatch swatch-terracotta"></i><span>Terracotta &amp; Cream</span><span class="theme-check" aria-hidden="true">✓</span></button>
+          <label class="theme-option custom-option"><i class="swatch swatch-custom"></i><span>Custom accent</span><input type="color" aria-label="Choose custom accent colour" value="#c9a46c"></label>
+        </div>
+      </div>
+      <a class="button button-small button-outline header-cta" href="#contact">Start a Project</a>
+      <button class="icon-button menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Contemporary Kerala home framed by tropical greenery"></div>
+      <div class="hero-content wrap reveal">
+        <p class="eyebrow">Architecture &amp; Interior Design</p>
+        <h1 id="hero-title">Homes designed around the way you live.</h1>
+        <p class="hero-copy">Thoughtful spaces, considered details, and a process built around you.</p>
+        <div class="button-row"><a class="button button-primary" href="#contact">Start a Project <span aria-hidden="true">↗</span></a><a class="button button-outline" href="#projects">View Our Work</a></div>
+      </div>
+      <div class="hero-foot wrap"><span>Based in Kerala, India</span><span>Homes with a sense of belonging</span></div>
+    </section>
+
+    <section class="trust-strip" aria-label="D'Casa Homes at a glance">
+      <div class="wrap trust-grid">
+        <!-- Replace these XX+ placeholders with verified company figures. -->
+        <div><strong>XX+</strong><span>Years of experience</span></div><div><strong>XX+</strong><span>Projects completed</span></div><div><strong>XX+</strong><span>Happy families</span></div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section-heading reveal"><div><p class="eyebrow">Selected work</p><h2 id="projects-title">Spaces made personal.</h2></div><p>A collection of homes shaped by place, light and the people who live in them.</p></div>
+      <div class="project-grid">
+          <a class="project-card project-tall reveal" href="#contact" style="--project-image:url('assets/project-1.jpg')"><span class="project-meta"><small>Architecture</small><strong>Project Title One</strong><span>Kerala, India</span></span><span class="project-arrow" aria-hidden="true">↗</span></a>
+          <a class="project-card reveal" href="#contact" style="--project-image:url('assets/project-2.jpg')"><span class="project-meta"><small>Interiors</small><strong>Project Title Two</strong><span>Kerala, India</span></span><span class="project-arrow" aria-hidden="true">↗</span></a>
+          <a class="project-card project-wide reveal" href="#contact" style="--project-image:url('assets/project-3.jpg')"><span class="project-meta"><small>Architecture &amp; Interiors</small><strong>Project Title Three</strong><span>Kerala, India</span></span><span class="project-arrow" aria-hidden="true">↗</span></a>
+          <a class="project-card reveal" href="#contact" style="--project-image:url('assets/project-4.jpg')"><span class="project-meta"><small>Renovation</small><strong>Project Title Four</strong><span>Kerala, India</span></span><span class="project-arrow" aria-hidden="true">↗</span></a>
+          <a class="project-card reveal" href="#contact" style="--project-image:url('assets/project-5.jpg')"><span class="project-meta"><small>Interiors</small><strong>Project Title Five</strong><span>Kerala, India</span></span><span class="project-arrow" aria-hidden="true">↗</span></a>
+        </div>
+        <details class="full-gallery reveal">
+          <summary>Browse all 34 supplied images <span aria-hidden="true">+</span></summary>
+          <div class="supplied-gallery">
+            <figure><img src="assets/gallery-01.jpg" alt="Kerala home exterior and tropical planting" loading="lazy"><figcaption>Image 01</figcaption></figure>
+            <figure><img src="assets/gallery-02.jpg" alt="Wood, stone and fabric interior material samples" loading="lazy"><figcaption>Image 02</figcaption></figure>
+            <figure><img src="assets/gallery-03.jpg" alt="Architecture studio with drawings and material samples" loading="lazy"><figcaption>Image 03</figcaption></figure>
+            <figure><img src="assets/gallery-04.jpg" alt="Traditional Kerala home with tiled roof and palms" loading="lazy"><figcaption>Image 04</figcaption></figure>
+            <figure><img src="assets/gallery-05.jpg" alt="Traditional Kerala home framed by tropical landscaping" loading="lazy"><figcaption>Image 05</figcaption></figure>
+            <figure><img src="assets/gallery-06.jpg" alt="Brass lamp beside a carved wooden doorway" loading="lazy"><figcaption>Image 06</figcaption></figure>
+            <figure><img src="assets/gallery-07.jpg" alt="Traditional courtyard home with tiled roof" loading="lazy"><figcaption>Image 07</figcaption></figure>
+            <figure><img src="assets/gallery-08.jpg" alt="Contemporary Kerala home at dusk" loading="lazy"><figcaption>Image 08</figcaption></figure>
+            <figure><img src="assets/gallery-09.jpg" alt="Dining room opening to a green courtyard" loading="lazy"><figcaption>Image 09</figcaption></figure>
+            <figure><img src="assets/gallery-10.jpg" alt="Shaded veranda with carved timber columns" loading="lazy"><figcaption>Image 10</figcaption></figure>
+            <figure><img src="assets/gallery-11.jpg" alt="Architectural model and plans on a studio table" loading="lazy"><figcaption>Image 11</figcaption></figure>
+            <figure><img src="assets/gallery-12.jpg" alt="Timber colonnade around a planted courtyard" loading="lazy"><figcaption>Image 12</figcaption></figure>
+            <figure><img src="assets/gallery-13.jpg" alt="Carved timber entry to a Kerala home" loading="lazy"><figcaption>Image 13</figcaption></figure>
+            <figure><img src="assets/gallery-14.jpg" alt="Living room with timber furniture and courtyard views" loading="lazy"><figcaption>Image 14</figcaption></figure>
+            <figure><img src="assets/gallery-15.jpg" alt="Traditional living room with timber details" loading="lazy"><figcaption>Image 15</figcaption></figure>
+            <figure><img src="assets/gallery-16.jpg" alt="Kerala home exterior surrounded by palms at sunset" loading="lazy"><figcaption>Image 16</figcaption></figure>
+            <figure><img src="assets/gallery-17.jpg" alt="Traditional home veranda and front steps" loading="lazy"><figcaption>Image 17</figcaption></figure>
+            <figure><img src="assets/gallery-18.jpg" alt="Traditional home and tropical garden" loading="lazy"><figcaption>Image 18</figcaption></figure>
+            <figure><img src="assets/gallery-19.jpg" alt="Carved timber doorway and tiled roof" loading="lazy"><figcaption>Image 19</figcaption></figure>
+            <figure><img src="assets/gallery-20.jpg" alt="Traditional house facade with tiled roof" loading="lazy"><figcaption>Image 20</figcaption></figure>
+            <figure><img src="assets/gallery-21.jpg" alt="Traditional Kerala home in evening light" loading="lazy"><figcaption>Image 21</figcaption></figure>
+            <figure><img src="assets/gallery-22.jpg" alt="Bright contemporary living room with tropical garden views" loading="lazy"><figcaption>Image 22</figcaption></figure>
+            <figure><img src="assets/gallery-23.jpg" alt="Modern home at twilight" loading="lazy"><figcaption>Image 23</figcaption></figure>
+            <figure><img src="assets/gallery-24.jpg" alt="Contemporary home facade in tropical morning light" loading="lazy"><figcaption>Image 24</figcaption></figure>
+            <figure><img src="assets/gallery-25.jpg" alt="Kerala home with a deep shaded veranda" loading="lazy"><figcaption>Image 25</figcaption></figure>
+            <figure><img src="assets/gallery-26.jpg" alt="Construction helmet, plans and measuring tools" loading="lazy"><figcaption>Image 26</figcaption></figure>
+            <figure><img src="assets/gallery-27.jpg" alt="Architectural model and material samples" loading="lazy"><figcaption>Image 27</figcaption></figure>
+            <figure><img src="assets/gallery-28.jpg" alt="Architectural model in a bright studio" loading="lazy"><figcaption>Image 28</figcaption></figure>
+            <figure><img src="assets/gallery-29.jpg" alt="Contemporary dining room with garden views" loading="lazy"><figcaption>Image 29</figcaption></figure>
+            <figure><img src="assets/gallery-30.jpg" alt="Neutral contemporary living room" loading="lazy"><figcaption>Image 30</figcaption></figure>
+            <figure><img src="assets/gallery-31.jpg" alt="Minimal courtyard garden framed by a home" loading="lazy"><figcaption>Image 31</figcaption></figure>
+            <figure><img src="assets/gallery-32.jpg" alt="Neutral fabric and finish samples" loading="lazy"><figcaption>Image 32</figcaption></figure>
+            <figure><img src="assets/gallery-33.jpg" alt="Contemporary Kerala home with landscaped entry" loading="lazy"><figcaption>Image 33</figcaption></figure>
+            <figure><img src="assets/gallery-34.jpg" alt="Modern home at sunset with a lit garden" loading="lazy"><figcaption>Image 34</figcaption></figure>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta-band"><div class="wrap cta-inner reveal"><p class="eyebrow">A good home begins with a conversation</p><h2>Planning a home? Let's talk.</h2><a class="button button-light" href="#contact">Book a free consultation <span aria-hidden="true">↗</span></a></div></section>
+
+    <section class="section services-section" id="services" aria-labelledby="services-title">
+      <div class="wrap"><div class="section-heading reveal"><div><p class="eyebrow">What we do</p><h2 id="services-title">From first sketch to final detail.</h2></div><p>One considered process for turning your ideas into a place that feels like yours.</p></div>
+        <div class="service-grid">
+          <article class="service-card reveal"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 40h34M11 40V18l13-9 13 9v22M18 40V27h12v13M8 18h32M14 22h4m12 0h4"/></svg><h3>Architectural Design</h3><p>Homes planned for your site, climate and the rhythms of everyday life.</p><a href="#contact">Enquire <span aria-hidden="true">→</span></a></article>
+          <article class="service-card reveal"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40V12h32v28M14 18h8v8h-8zm12 0h8v8h-8zM14 30h8v6h-8zm12 0h8v6h-8zM5 40h38"/></svg><h3>Interior Design</h3><p>Warm, practical interiors where materials, light and details work in harmony.</p><a href="#contact">Enquire <span aria-hidden="true">→</span></a></article>
+          <article class="service-card reveal"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 40h36M10 40V17l14-8 14 8v23M17 40V27h14v13M7 17h34M14 21h4m12 0h4"/></svg><h3>Construction &amp; Renovation</h3><p>Careful execution and upgrades that respect both your brief and your budget.</p><a href="#contact">Enquire <span aria-hidden="true">→</span></a></article>
+          <article class="service-card reveal"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="7" width="28" height="34" rx="2"/><path d="M17 16h14M17 23h14M17 30h7m6 4 3 3 6-8"/></svg><h3>Project Estimates</h3><p>Clear early guidance to help you understand scope, priorities and next steps.</p><a href="#contact">Enquire <span aria-hidden="true">→</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section approach-section" id="approach" aria-labelledby="approach-title"><div class="wrap"><div class="section-heading reveal"><div><p class="eyebrow">Our approach</p><h2 id="approach-title">A clear path, together.</h2></div><p>Good work comes from open conversations and thoughtful decisions at every stage.</p></div>
+      <div class="steps-grid"><article class="step-card reveal"><span class="step-number">01</span><h3>Consultation</h3><p>We listen to your ideas, needs, site and aspirations.</p></article><article class="step-card reveal"><span class="step-number">02</span><h3>Design</h3><p>We shape the brief into considered plans and details.</p></article><article class="step-card reveal"><span class="step-number">03</span><h3>Build</h3><p>Your project takes shape with guidance along the way.</p></article><article class="step-card reveal"><span class="step-number">04</span><h3>Handover</h3><p>We walk through the finished space and its final touches.</p></article></div>
+    </div></section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title"><div class="wrap about-grid"><div class="about-image-wrap reveal"><img src="assets/about.jpg" alt="Architecture studio with drawings and material samples"><span class="image-caption">Made for real life, with care.</span></div><div class="about-copy reveal"><p class="eyebrow">A little about us</p><h2 id="about-title">Design with a personal touch</h2><p>At D'Casa Homes, we believe a home should reflect the people who bring it to life. Our work starts by understanding how you want to feel, move and gather in your space.</p><p>Based in Kerala, we bring architecture, interiors and construction together with a thoughtful, collaborative approach from the first conversation onwards.</p><a class="button button-outline" href="#contact">Get to know us <span aria-hidden="true">↗</span></a></div></div></section>
+
+    <section class="section testimonials-section" aria-labelledby="testimonials-title"><div class="wrap"><div class="section-heading reveal"><div><p class="eyebrow">Kind words</p><h2 id="testimonials-title">The people make a home.</h2></div></div><div class="testimonial-grid"><blockquote class="testimonial-card reveal"><span class="quote-mark" aria-hidden="true">“</span><p>Sample testimonial text goes here.</p><footer>Client Name <span>·</span> Project</footer></blockquote><blockquote class="testimonial-card reveal"><span class="quote-mark" aria-hidden="true">“</span><p>Sample testimonial text goes here.</p><footer>Client Name <span>·</span> Project</footer></blockquote><blockquote class="testimonial-card reveal"><span class="quote-mark" aria-hidden="true">“</span><p>Sample testimonial text goes here.</p><footer>Client Name <span>·</span> Project</footer></blockquote></div><p class="placeholder-note">Sample testimonials — replace with real client reviews before publishing.</p></div></section>
+
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title"><div class="wrap faq-grid"><div class="faq-intro reveal"><p class="eyebrow">Questions, answered</p><h2 id="faq-title">A few things you may be wondering.</h2><p>Have another question? <a href="#contact">Let's talk.</a></p></div><div class="faq-list reveal"><details><summary>How do we get started?<span aria-hidden="true"></span></summary><p>Share a little about your project through the enquiry form. We’ll get in touch to understand your needs and discuss a first conversation.</p></details><details><summary>What does a project cost?<span aria-hidden="true"></span></summary><p>Every project is different. Costs depend on the scope, site and selections. Tell us what you have in mind and we can discuss an initial estimate.</p></details><details><summary>How long does a project take?<span aria-hidden="true"></span></summary><p>Timelines vary with project size, approvals and site conditions. We’ll outline a realistic schedule once we understand your brief.</p></details><details><summary>Which areas do you serve?<span aria-hidden="true"></span></summary><p>We are based in Kerala. Please share your project location and we’ll confirm how we can help.</p></details><details><summary>Can you work with my architect or plans?<span aria-hidden="true"></span></summary><p>We’re happy to discuss working with your existing plans or architect. Share the details and we can explore the best way forward.</p></details></div></div></section>
+
+    <section class="cta-band cta-band-alt"><div class="wrap cta-inner reveal"><p class="eyebrow">Your next chapter starts here</p><h2>Ready to begin? Tell us about your project.</h2><a class="button button-light" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div></section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-grid"><div class="contact-copy reveal"><p class="eyebrow">Start a conversation</p><h2 id="contact-title">Let's start your project</h2><p>Tell us a little about the home you have in mind. We’ll be glad to hear from you.</p><ul class="contact-list"><li><span>Phone</span><a href="tel:+910000000000">+91 00000 00000</a></li><li><span>Email</span><a href="mailto:hello@example.com">hello@example.com</a></li><li><span>Address</span><address>Kerala, India <em>(replace with full office address)</em></address></li></ul><a class="button button-outline whatsapp-outline" href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer">Chat on WhatsApp <span aria-hidden="true">↗</span></a></div>
+      <form class="contact-form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <!-- Replace YOUR_FORM_ID in the action URL with the ID provided by Formspree. -->
+        <div class="form-row"><label>Name<input name="name" type="text" autocomplete="name" placeholder="Your name" required></label><label>Phone<input name="phone" type="tel" autocomplete="tel" placeholder="+91 00000 00000" required></label></div>
+        <label>Email<input name="email" type="email" autocomplete="email" placeholder="hello@example.com" required></label>
+        <label>Project type<select name="project_type" required><option value="" disabled selected>Select a project type</option><option>New home</option><option>Interior design</option><option>Renovation</option><option>Other</option></select></label>
+        <label>Message<textarea name="message" rows="4" placeholder="A little about your project…" required></textarea></label>
+        <button class="button button-primary" type="submit">Send enquiry <span aria-hidden="true">↗</span></button>
+      </form></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-grid"><div class="footer-brand"><a href="#top"><img src="assets/dcasa-logo.png" alt="D'Casa Homes"></a><p>Thoughtful architecture, interiors and homes, made around you.</p></div><div><h2>Quick links</h2><ul><li><a href="#projects">Projects</a></li><li><a href="#services">Services</a></li><li><a href="#approach">Our Approach</a></li><li><a href="#about">About</a></li><li><a href="#faq">FAQ</a></li></ul></div><div><h2>Contact</h2><ul><li><a href="tel:+910000000000">+91 00000 00000</a></li><li><a href="mailto:hello@example.com">hello@example.com</a></li><li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram <span>(placeholder)</span></a></li></ul></div></div><div class="wrap footer-bottom"><span>© <span id="current-year"></span> D'Casa Homes</span><a href="#top">Back to top ↑</a></div></footer>
+  <a class="floating-whatsapp" href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer" aria-label="Chat with D'Casa Homes on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3 20.3l1.3-4.9a8.4 8.4 0 1 1 16.2-3.7Z"/><path d="M8.2 8.2c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .5.4l.7 1.7c.1.3 0 .5-.1.7l-.5.6c-.2.2-.2.4-.1.6.6 1 1.3 1.7 2.4 2.2.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.7-.1l1.7.8c.3.2.4.3.4.5 0 .3-.2 1.1-.7 1.5-.5.5-1.2.7-2 .6-1.2-.2-2.6-.8-4.1-2.1-1.3-1.2-2.2-2.7-2.5-3.8-.3-1.1.1-1.8.4-2.2.3-.3.6-.5.7-.5Z"/></svg></a>
+</body>
+</html>
